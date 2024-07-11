@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .text-box {
+            border: 1px solid black;
+            height: 100px;
+            width: 300px;
+            overflow: visible; /*기본값*/
+            overflow: scroll; /*넘치는 만큼 스크롤 생성해줌*/
+            overflow: hidden; /*넘치는 영역을 숨겨줌*/
+            overflow: auto; /*텍스트 양에 따라서 위 옵션 중 자동 설정*/
+        }
+        .table-box {
+            border: 1px solid green;
+            height: 100px;
+            width: 300px;
+            overflow-x: auto; /*x축으로 스크롤을 자동으로 생성해줌*/
+            white-space: nowrap; /*가로 줄바꿈 방지*/
+        }
+
+    </style>
+
+</head>
+<body>
+    <p class="text-box">
+        피카츄 라이츄
+        파이리 꼬부기
+        버터플 야도란
+        피존투 또가스
+        서로 생긴 모습은
+        달라도
+        우리는 모두
+        친구(맞아)
+        산에서 들에서
+        때리고 뒹굴고
+        사막에서 정글에서
+        울다가 웃다가
+        서로 만나기까지
+        힘들었어도
+        우리는 모두 친구
+    </p>
+
+    <div class="table-box">
+        <table border="1">
+            <tr>
+                <td>데이터</td>
+                <td>데이터</td>
+                <td>데이터</td>
+                <td>데이터</td>
+                <td>데이터</td>
+                <td>데이터</td>
+                <td>데이터</td>
+                <td>데이터</td>
+            </tr>
+            <tr>
+                <td>데이터</td>
+                <td>데이터</td>
+                <td>데이터</td>
+                <td>데이터</td>
+                <td>데이터</td>
+                <td>데이터</td>
+                <td>데이터</td>
+                <td>데이터</td>
+            </tr>
+            <tr>
+                <td>데이터</td>
+                <td>데이터</td>
+                <td>데이터</td>
+                <td>데이터</td>
+                <td>데이터</td>
+                <td>데이터</td>
+                <td>데이터</td>
+                <td>데이터</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

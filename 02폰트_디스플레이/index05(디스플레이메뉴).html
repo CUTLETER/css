@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {padding: 0; margin: 0;}
+        ul, li {list-style: none;} /*앞에 자동으로 붙는 땡땡이가 사라짐*/
+
+        .menu {background-color: darkgray; text-align: center;}
+        .menu > li {display: inline;}
+        .menu > li > a {
+            display: inline-block;
+                width: 80px; 
+                height: 100px; 
+                line-height: 100px; color: navy; 
+                text-decoration: none;
+            }
+        .menu > li > a:hover {
+                background-color: skyblue;
+            }
+
+        /*실습*/    
+        header {background-color: black;}
+        header .box {text-align: center;}
+        header .nav {text-align: right;}
+        header .gnb li {
+            display: inline;
+            text-align: center;
+            background-color: black;
+        }
+        header .gnb li a {
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            color: white;
+            line-height: 60px;
+            text-decoration: none;
+        }
+        header .gnb li a:hover {background-color: gray;}
+
+    </style>
+
+</head>
+<body>
+    <!-- <ul class="menu">
+        <li><a href="#">메뉴1</a></li>
+        <li><a href="#">메뉴2</a></li>
+        <li><a href="#">메뉴3</a></li>
+        <li><a href="#">메뉴4</a></li>
+        <li><a href="#">메뉴5</a></li>
+    </ul> -->
+
+    <header>
+        <div class="box">
+            <img src="img/css3.png" >
+        </div>
+
+        <nav class="nav">
+            <ul class="gnb">
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

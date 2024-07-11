@@ -1,0 +1,157 @@
+* {padding: 0; margin: 0;}
+ul, li {list-style: none;}
+a {text-decoration: none;}
+img {max-width: 100%; height: auto;}
+
+/*767px 이상에서만*/
+@media(min-width: 767px) {
+
+    #wrap {
+        width: 960px;
+        border: 1px solid #ccc;
+        margin: 0 auto;
+    }
+
+    #wrap .logo {
+        height: 280px;
+        background-image: url(img/bg.png);
+    }
+
+    #wrap .logo h3 {
+        color: #eee;
+        font-weight: 600;
+        padding: 10px 20px;
+    }
+
+    #wrap nav {
+        background-color: #5a5757;
+    }
+
+    #wrap nav > ul {}
+
+    #wrap nav > ul > li {
+        display: inline;
+    }
+
+    #wrap nav > ul > li > a {
+        display: inline-block;
+        padding: 20px 30px;
+        color: #ddd;
+        font-family: "Do Hyeon", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 20px;
+    }
+
+    #wrap nav > ul > li > a:hover {
+        background-color: #aaa;
+    }
+
+    #section {
+        overflow: hidden;
+    }
+
+    #section > .left {
+        float: left;
+        width: 760px;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    #section > .right {
+        float: right;
+        width: 200px;
+    }
+
+    #footer {
+        background-color: #5a5757;
+        text-align: center;
+        color: #eee;
+        padding: 20px;
+    }
+
+}
+
+@media(max-width: 766px) {
+    #wrap {
+        border: 1px solid #aaa;
+        margin: 0 auto;
+        min-width: 400px; /*최소 400px 이상부터 가변됨*/
+    }
+
+    #wrap .logo {
+        background-image: url(img/bg.png);
+        height: 220px;
+    }
+
+    #wrap .logo h3 {
+        color: #eee;
+        padding: 20px 20px;
+        font-size: 30px;
+    }
+
+    #wrap nav {
+        background-color: #555353;
+    }
+
+    #wrap nav ul {
+
+    }
+
+    #wrap nav ul li {
+        display: inline;
+    }
+
+    #wrap nav ul li a {
+        display: inline-block;
+        padding: 15px 25px;
+        color: #eee;
+        font-family: "Do Hyeon", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 20px;
+    }
+
+    #wrap nav ul li a:hover {
+        background-color: #aaa;
+    }
+
+    #section {
+        
+    }
+
+    #section .left {
+        padding: 5px;
+    }
+
+    #section .left h3 {
+        padding: 5px;
+        font-weight: 400;
+        font-family: "Do Hyeon", sans-serif;
+        font-style: normal;
+        font-size: 20px;
+    }
+
+    #section .left p {
+        padding: 10px;
+        font-family: "Gowun Batang", serif;
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    #section .right {
+        padding: 10px;
+    }
+
+    #section .right img {
+        width: 32.3333%;
+    }
+
+    #footer {
+        text-align: center;
+        background-color: #555353;
+        color: #eee;
+    }
+
+      
+}

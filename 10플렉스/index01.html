@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            background-color: #ddd; padding: 10px;
+        }
+
+        .box .item {
+            background-color: #333; width: 50px; height: 50px;
+            color: rgb(226, 49, 108);
+            margin: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- https://www.heropy.dev/p/Ha29GI 참조 -->
+     <style>
+        .container {
+            /* display: flex; 컨테이너를 블럭 배치시킴 */
+            display: inline-flex; /*컨테이너를 인라인 배치시킴*/
+        }
+     </style>
+
+    <h3>flex vs inline flex</h3>
+    <div class="container box">
+        <div class="item">HELLO</div>
+        <div class="item">월드</div>
+        <div class="item">FLEX</div>
+    </div>
+    <div class="container box">
+        <div class="item">HELLO</div>
+        <div class="item">월드</div>
+        <div class="item">FLEX</div>
+    </div>
+
+
+    <h3>flex-direction (주축의 방향)</h3>
+    <style>
+        .container2 {
+            display: flex;
+            flex-direction: row; /* 주축의 기본값은 row*/
+
+            width: 300px;
+            flex-wrap: wrap; /*기본값 nowrap (아이템 크기 줄이면서 또는 box 밖으로 삐져 나오더라도 끝까지 한줄로 표시)*/
+            /* wrap 은 box 너비 벗어나지 않고 다 차면 자동 줄바꿈 */
+        }
+    </style>
+
+    <div class="container2 box">
+        <div class="item">HELLO</div>
+        <div class="item">월드</div>
+        <div class="item">FLEX</div>
+        <div class="item">FLEX</div>
+        <div class="item">FLEX</div>
+        <div class="item">FLEX</div>
+        <div class="item">FLEX</div>
+        <div class="item">FLEX</div>
+        <div class="item">FLEX</div>
+        <div class="item">FLEX</div>
+        <div class="item">FLEX</div>
+        <div class="item">FLEX</div>
+        <div class="item">FLEX</div>
+        <div class="item">FLEX</div>
+        <div class="item">FLEX</div>
+        <div class="item">FLEX</div>
+        <div class="item">FLEX</div>
+    </div>
+
+
+    <h3>flex-flow (direction+wrap)</h3>
+    <style>
+        .container3 {
+            display: flex;
+            flex-flow: row nowrap; /*direction, 줄바꿈 없음*/
+        }
+    </style>
+    <div class="container3 box">
+        <div class="item">HELLO</div>
+        <div class="item">월드</div>
+        <div class="item">FLEX</div>
+        <div class="item">FLEX</div>
+        <div class="item">FLEX</div>
+        <div class="item">FLEX</div>
+        <div class="item">FLEX</div>
+        <div class="item">FLEX</div>
+        <div class="item">FLEX</div>
+        <div class="item">FLEX</div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        ul, li {padding: 0; margin: 0; list-style: none;}
+        .box {
+            border: 1px solid red;
+            width: 400px;
+            overflow: hidden;  /*방법 2.*/
+            margin: 0 auto;
+        }
+        /* 방법 1.
+        .box::after {
+            content: ""; display: block; clear: both;
+        } */
+        .box li {
+            border: 1px solid green;
+            float: left;
+            /*float은 부모가 자식을 감싸지 못하는 현상이 있기 때문에, 
+              부모 중 택1 반드시 지정할 것! 방법은 두 가지 있음*/
+              width: 20%; /*부모 영역에 대한 비율, px로 하면 정확히 나누기 쉽지 않음*/
+              text-align: center;
+              box-sizing: border-box;
+        }
+
+        .wrap {
+            border: 1px solid blue;
+            width: 500px;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+        .wrap .item {
+            border: 1px solid gold;
+            float: right;
+            width: 33.3333%;
+            text-align: center;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <ul class="box">
+        <li>박스1</li>
+        <li>박스2</li>
+        <li>박스3</li>
+        <li>박스4</li>
+        <li>박스5</li>
+    </ul>
+    <div class="wrap">
+        <div class="item">박스1</div>
+        <div class="item">박스2</div>
+        <div class="item">박스3</div>
+    </div>
+</body>
+</html>

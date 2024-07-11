@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            background-color: #ddd; padding: 10px;
+        }
+
+        .box .item {
+            background-color: #53b65c; width: 50px; height: 50px;
+            color: rgb(224, 221, 42);
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h3>justify-content(주축 정렬 - direction으로 주축이 결정됨)</h3>
+    <style>
+        .container {
+            display: flex;
+            /* 주축은 row */
+            /*justify-content: space-around; 기본값 flex-start*/
+
+            flex-direction: column;
+            height: 300px;
+            justify-content: space-around;
+        }
+    </style>
+
+    <div class="container box">
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">justify</div>
+    </div>
+
+
+    <hr>
+
+    <h3>align-item(교차축 정렬 - 한 줄일 때)</h3>
+    <style>
+        .container2 {
+            display: flex;
+            height: 100px;
+            /*align-items: stretch; 아이템 높이를 50px로 고정시켜놔서 변화 없음 */
+            align-items: baseline;
+            /* baseline은 글자의 바닥선에 맞춰서 정렬됨 */
+        }
+    </style>
+
+    <div class="container2 box">
+        <div class="item" style="height: 20px;">hello</div>
+        <div class="item" style="height: 30px;">world</div>
+        <div class="item">align</div>
+    </div>
+
+
+    <hr>
+
+    <h3>align-content (교차축 정렬 - 여러 줄일 때)</h3>
+    <style>
+        .container3 {
+            /* 확인하려면 컨테이너 높이 필요함 */
+            display: flex;
+            height: 300px;
+            width: 300px;
+            flex-wrap: wrap;
+            align-content: center; /*기본값은 stretch, 속성이 justify-content와 비슷함*/
+        }
+    </style>
+
+    <div class="container3 box">
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">align</div>
+        <div class="item">align</div>
+        <div class="item">align</div>
+        <div class="item">align</div>
+        <div class="item">align</div>
+        <div class="item">align</div>
+        <div class="item">align</div>
+        <div class="item">align</div>
+        <div class="item">align</div>
+        <div class="item">align</div>
+    </div>
+</body>
+</html>

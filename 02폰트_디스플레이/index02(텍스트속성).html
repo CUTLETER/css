@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Hahmlet:wght@100..900&family=Playwrite+AU+VIC:wght@100..400&display=swap" rel="stylesheet">
+
+<style>
+    * {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    }
+
+    p{
+        text-align: center;
+        letter-spacing: 10px; /*글자 사이 간격*/
+        border: 2px solid blue;
+        font-size: 60px;
+    }
+    
+    div {
+        border: 2px solid black;
+        text-align: center;
+    }
+
+    div > img {
+        vertical-align: top; /*기준이 되는 태그에 직접 지정함*/
+        
+    }
+
+    /*기준이 되는 태그가 없을 때, 글자를 가운데로 보내는 방법
+    line-height와 높이 값을 동일하게 줄 것*/
+    .box {
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    a {
+        display: block;
+        text-decoration: underline; 
+        color: grey;
+        text-align: center;}
+
+</style>    
+
+</head>
+<body>
+    <p>HELLO WORLD</p>
+
+    <div>
+        WORLD HELLO
+        <img src="img/css3.png" alt="제목" style ="text-align:center">
+    </div>
+
+    <div class="box">
+        HELL WORLD!
+    </div>
+
+    <a href="#">a 링크는 텍스트 데코레이션을 가지고 있음</a>
+</body>
+</html>

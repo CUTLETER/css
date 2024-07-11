@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{} /* 세부 디자인 시작 전, 전체 디자인 지정할 때!*/
+        b{color: red;}
+        ul,li{list-style: none;} /*여러 개 지정 시 콤마로 나열*/
+
+        #a1 {color: blue;}
+        .a2 {color: green;}
+
+        .box p {color: orange;} /*box의 모든 자손 p 태그*/
+        .box > p {color: violet;} /*box의 직계 자손 p 태그*/
+
+        .wrap > input[name=aaa] {color: darkmagenta;} /* [속성=값], wrap 안의 name 값이 aaa인 태그 콕 집기 */
+
+        /*가상 선택자 : 태그에 어떠한 동작이 일어날 때, : 콜론 찍음*/
+        b:active {color: blue; border: 1px dotted brown;} 
+        ul > li:hover {color: aqua;}
+        input[name=aaa]:focus {border: 5px solid fuchsia; outline: none;}
+
+
+    </style>
+
+</head>
+<body>
+    <b>태그 선택자</b> 
+    <b>태그 선택자</b>
+
+    <ul>
+        <li>콤마</li>
+        <li>콤마</li>
+    </ul>
+    
+    <p id="a1">아이디 선택자</p>
+    <p class="a2">클래스 선택자</p>
+    <p class="a2">클래스 선택자</p>
+
+    <div class="box">
+        <p>하위 선택자</p>
+        <p>하위 선택자</p>
+
+        <ul>
+            <li><p>하위 선택자</p></li>
+            <li><p>하위 선택자</p></li>
+            <li><p>하위 선택자</p></li>
+        </ul>
+
+    </div>
+
+    <div class="wrap">
+        <input type="text" name="aaa">
+        <input type="text" name="bbb">
+    </div>
+
+</body>
+</html>

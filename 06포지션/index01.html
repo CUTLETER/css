@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {padding: 0; margin: 0;}
+        p {height: 100px;}
+        .box {width: 500px; margin: 0 auto;}
+        .content {}
+        .item1 {background-color: blueviolet;}
+        .item2 {background-color: hotpink; position: absolute; left: 50px; top: 20px;}
+        .item3 {background-color: rgb(155, 155, 155);}
+
+        /*
+        1.포지션 적용할 태그에 absolute
+        absolute 적용하면 이 박스는 부모 영역에 relative z축으로 떠오름 (부모에 relative 넣음)
+        2.left, right 중 택1 그리고 top, bottom 중 택1 해서 위치 조정해야 함
+        **부모에 relative가 없으면 body 영역 기준(화면)으로 움직임
+        */
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="content">
+            <p class="item1">보라</p>
+            <p class="item2">분홍</p>
+            <p class="item3">회색</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #section {
+            height: 600px;
+            border: 1px solid black;
+            background-image: url(img/pexels-pixabay-220182.jpg);
+            background-repeat: no-repeat;
+            background-size: contain; /*이미지 잘리는 걸 방지, 남는 공간은 비움*/
+            background-size: cover; /*빈 공간 없이 다 채우고, 이미지를 잘라버림*/
+        }
+
+        #mid {
+            height: 800px;
+            border: 1px solid black;
+            background-image: url(img/pexels-pixabay-220182.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed; /*뒷배경 고정*/
+        }
+    </style>
+</head>
+<body>
+    <section id="section">
+
+    </section>
+
+    <section id="mid">
+
+    </section>
+
+    <section style="height: 1000px;">
+
+    </section>
+</body>
+</html>
