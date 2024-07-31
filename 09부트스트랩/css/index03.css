@@ -33,11 +33,13 @@
 
 .my-logo {
     padding: 5px 15px;
+    cursor: pointer;
 }
 
 /*슬라이드 영역*/
 #my-slide {
     margin-top: 52px;
+    cur
 }
 
 .carousel-control.right, /*carousel-control 클래스 중 right 들어간 놈*/
